@@ -247,7 +247,7 @@ def showLeaderboard():
 
     SqlConnect()                                                                                                                # Funksjon som defineres over, men er koblingen til databasen
     cursor = conn.cursor()                                                                                                      # Variabel som definerer kommandoen som brukes senere
-    query = "SELECT Navn, Score, DATE_FORMAT(Dato, '%d.%m.%Y') Dato FROM Attempts ORDER BY Score DESC LIMIT 0,5 "                # Variabel som defineres hvilket informasjon som skal innhentes eller sendes til/fra databasen, 
+    query = "SELECT Navn, Score, DATE_FORMAT(Dato, '%d.%m.%Y') Dato FROM Attempts ORDER BY Score DESC LIMIT 0,5 "               # Variabel som defineres hvilket informasjon som skal innhentes eller sendes til/fra databasen, 
                                                                                                                                 # i tillegg putter den i rekkefølge og limiterer hvor mye som skal vises
     cursor.execute(query)                                                                                                       # Kommando som kjører variabelen "query"
 
@@ -263,7 +263,7 @@ def showLeaderboard():
     for Attempts in cursor:                                                                                                      # For løkke som sjekker etter informasjon inn i tabelen inn på daabasen
         for j in range(len(Attempts)):                                                                                           # For hvergang den finner informasjon skal den legges inn på et tabell som er laget i tkinter
             e = Label(leaderboardWin, width = 10, text = Attempts[j],borderwidth = 2, relief = 'ridge', anchor = 'w')            # Kommando som lager tabellen som legges inn på tkinter boksen som bestemmer, innhold, plassering, farge og design
-            e.grid(row=i, column=j)                                                                                             # Tabellen sin definisjon
+            e.grid(row=i, column=j)                                                                                              # Tabellen sin definisjon
         i=i+1                                                                                                                   
         #Etter den går gjennom første indeksen, skal den plusses på en å gjør det samme igjen
 
