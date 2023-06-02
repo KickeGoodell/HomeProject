@@ -1,0 +1,110 @@
+body{
+margin: 0px;
+padding: 0px;
+}
+#menumain {
+  /* This is the css for the div element making up the main div for the menu */
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  text-decoration: none;
+  width: 100%;
+  color: white;
+  font-family: Ebrima, Arial, sans-serif;
+  font-size: 25px;
+  background-color: #668F80;
+}
+
+.innermenu {
+  /* This is the css for the div element that makes up the links inside the menu */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 93px;
+  margin-top: 0px;
+}
+
+.menuunderline {
+  /* This is the css for the design element on the menu */
+  display: flex;
+  background-color: #63C132;
+  height: 40px;
+  width: 100%;
+}
+
+/* Blow is a code. This is to define a color for the current page you're on. */
+
+.ColoredText {
+    color: #0BC9CD;
+  }
+  
+a {
+  /*This is the css for the links*/
+  text-decoration: none;
+  color: white;
+  font-family: Ebrima, Arial, sans-serif;
+  transition: 0.5s;
+}
+
+a:hover {
+  color: #14DCDC;
+}
+
+
+.container{
+display: flex;
+font-family: Embrima, Arial, sans-serif;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+#form{
+display: flex;
+font-family: Ebrima, Arial, sans-serif;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: 80%;
+}
+
+.collapseFaq {
+  background-color: #668f80;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 6%;
+  width: 15vw;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.faqActive, .collapseFaq:hover {
+  background-color: #14DCDC;
+  transition: 0.5s;
+}
+
+.faqContent {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  padding: 0 50px;
+  margin: 2vw;
+  display: none;
+  width: 8vw;
+  overflow: hidden;
+  background-color: #668f80;
+}
+
+.questionContainer{
+  display: flex;
+  flex-direction: row;
+}
+
+.contentContainer{
+  width: 25vw;
+}
