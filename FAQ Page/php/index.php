@@ -55,9 +55,13 @@
       </form>
     </div>
 
-    <div>
+    <div class="indexContent">
     <h1>Follow this link to play the game!</h1>
-    <a href="github.com/KickeGoodell/HomeProject/SnakeGame/Snake.pyw"></a>
+    <p>After you get sent to the link be sure to find and download the file, the download button will be on the right side of the screen next to the "RAW" button </p>
+    <a class="snakeLink" href="https://github.com/KickeGoodell/HomeProject/blob/main/SnakeGame/Snake.pyw">
+    <img src="../Pictures/Snake.svg" height="100" alt="Snake Game link picture">
+    </a>
+    <p>Link is picture above</p>
     </div>
 
 
