@@ -62,6 +62,8 @@
     <img src="../Pictures/Snake.svg" height="100" alt="Snake Game link picture">
     </a>
     <p>Link is picture above</p>
+    <p>If you have any questions about how you play the game, feel free to click the link below to see a tutorial!</p>
+    <a class="snakeLink" href="https://www.youtube.com/watch?v=mVL4WXId30s&ab_channel=EnriqueGoodell">Youtube Tutorial link</a>
     </div>
 
 
