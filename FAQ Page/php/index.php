@@ -55,6 +55,13 @@
       </form>
     </div>
 
+    <div>
+    <h1>Follow this link to play the game!</h1>
+    <a href="github.com/KickeGoodell/HomeProject/SnakeGame/FinalizedSnakeGameCopy.pyw"></a>
+    </div>
+
+
+
 <!--JavaScript used to create the functionality on the button, so that when you press it a message shows up-->
 
     <script>
