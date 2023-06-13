@@ -57,7 +57,7 @@
 
     <div>
     <h1>Follow this link to play the game!</h1>
-    <a href="github.com/KickeGoodell/HomeProject/SnakeGame/FinalizedSnakeGameCopy.pyw"></a>
+    <a href="github.com/KickeGoodell/HomeProject/SnakeGame/Snake.pyw"></a>
     </div>
 
 
