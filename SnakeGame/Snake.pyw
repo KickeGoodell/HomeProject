@@ -13,7 +13,7 @@ def SqlConnect():
         host="10.2.2.195",                                                                                                      # Ip-adresse to the server
         user="enrique",                                                                                                         # Navn på bruker som skal tilkobles Name of user that is being connected to
         password="d9g[4k/Pphr10w00",                                                                                            # Passord on the user thats being connected to
-        database="HomeProject"                                                                                                   # Name to the database that is being connected to
+        database="HomeProject"                                                                                                  # Name to the database that is being connected to
     )                                                                                                                           
 
 
