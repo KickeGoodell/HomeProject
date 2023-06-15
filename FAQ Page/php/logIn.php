@@ -65,17 +65,16 @@
 
       if(isset($_POST['submit'])){
         
-        $usrn = mysqli_real_escape_string($conn, $_POST['Username']);
-        $pwd = mysqli_real_escape_string($conn, $_POST['Password']);
+        $usrn = trim(mysqli_real_escape_string($conn, $_POST['Username']), "  ");
+        $pwd = trim(mysqli_real_escape_string($conn, $_POST['Password']), "  ");
 
-        $sql = "SELECT * FROM WebUsers where Username='$usrn'";
-
+      $sql = "SELECT * FROM WebUsers where Username='$usrn'";
         $result = mysqli_query($conn, $sql)
           or die('Error connecting to database.');
 
         if (mysqli_num_rows($result) > 0 ) {
           while($row = mysqli_fetch_assoc($result)) {
-            if ($row["Password"] == $pwd) {
+            if (password_verify($pwd, $row["Password"])) {
               $_SESSION["privileges"] = $row["Privileges"];
               header("Location: admin.php");
             } else {

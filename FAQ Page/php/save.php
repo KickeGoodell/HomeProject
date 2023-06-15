@@ -29,7 +29,7 @@
         $password = mysqli_real_escape_string($conn, $_POST['Password']);
         $privileges = mysqli_real_escape_string($conn, $_POST['Privileges']);
 
-        $sql = "INSERT INTO WebUsers (Username, Password, Privileges) VALUES ('$username', '$password', '$privileges');";
+        $sql = "INSERT INTO WebUsers (Username, Password, Privileges) VALUES ('$username', '".password_hash($password, PASSWORD_DEFAULT)."', '$privileges');";
         }
 
 

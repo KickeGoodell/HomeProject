@@ -29,7 +29,7 @@
             if(empty($password)){
                 $sql = "UPDATE WebUsers SET Username = '$username' , Privileges = '$privileges' WHERE ID='$id';"; 
             } else {
-                $sql = "UPDATE  WebUsers SET Username = '$username' , Password = '$password' , Privileges = '$privileges' WHERE ID='$id';";
+                $sql = "UPDATE  WebUsers SET Username = '$username' , Password = '".password_hash($password, PASSWORD_DEFAULT)."' , Privileges = '$privileges' WHERE ID='$id';";
             }
         }   
     } else if($dbtable == 'faq'){
