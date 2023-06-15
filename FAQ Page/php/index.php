@@ -39,7 +39,8 @@
 
     <div class="menuunderline"></div>
 
-<!--HTML elements that give the user the option to create questions, set their name and title on the question-->
+<!--HTML elements that give the user the option to create questions, set their name and title on the question,
+    As well as see links to the youtube tutorial and the github page-->
 
     <div class="container">
       <h3 id="h1">Ask your own question:</h3>
