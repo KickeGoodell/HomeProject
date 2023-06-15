@@ -1,6 +1,6 @@
 from tkinter import *
 
-mainMessage()
+
 
 def mainMessage():
     root = Tk()
@@ -18,3 +18,4 @@ def messageWindow():
     Label(win, text=message).pack()
     Button(win, text='Save', command=win.destroy).pack()
 
+mainMessage()
