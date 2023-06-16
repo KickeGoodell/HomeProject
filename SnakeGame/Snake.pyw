@@ -121,6 +121,7 @@ class Snake:
                 elif c.dirny == -1 and c.pos[1] <= 0: c.pos = (c.pos[0], c.rows-1)                                              # Elif statement that checks if the snake moves to the top and hits the end of the screen, if so then the figure shows up on the bottom side of the screen
                 else: c.move(c.dirnx, c.dirny)                                                                                  # If none of the above is true, then the snake or the cube objects keep moving themselves as normal
 
+#heisann
 
     def reset(self, pos):                                                                                                                               
         '''Function that runs when you restart the game, this will set the original 
